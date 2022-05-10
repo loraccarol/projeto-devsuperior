@@ -1,6 +1,6 @@
 import { ReactComponent as GithubIcon } from 'assets/img/Vector.svg';
 
-export function Navbar() {
+export default function Navbar() {
     return (
         <header>
             <nav className="container">
