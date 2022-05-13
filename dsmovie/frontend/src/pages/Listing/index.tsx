@@ -12,7 +12,8 @@ export default function Listing() {
     useEffect(() => {
         axios.get(`${BASE_URL}/movies`)
             .then(response => {
-                console.log(response.data)
+                const data = response.data as MoviePage;
+                setPageNumber(data.number)
     });
     }, []);
 
